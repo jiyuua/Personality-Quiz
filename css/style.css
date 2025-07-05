@@ -1,0 +1,129 @@
+/* STYLE SECTIONING TAGS */
+*{
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Brush Script MT", "Cursive", monospace;
+  margin: 1em;
+  background-color:#F2DCBC;
+  text-align: center;
+  margin-top: 2;
+  margin-bottom: 2;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌟</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+body1{
+  max-width: 30%;
+  max-height: 30%;
+}
+
+p{
+  font-size: 24px;
+  color: #59528F;
+}
+
+h1{
+  font-size: 35px;
+}
+#show{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: visible;
+}
+
+#showcat{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: hidden;
+  position: absolute;
+}
+#showdog{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: hidden;
+  position: absolute;
+}
+#showbird{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: hidden;
+  position: absolute;
+}
+#showdragon{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: hidden;
+  position: absolute;
+}
+#showbug{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: hidden;
+  position: absolute;
+}
+#showfrog{
+  max-width: 15%;
+  max-height: 15%;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* .showcatt{
+  visibility: visible;
+  align: center;
+} */
+
+/* STYLE TEXT */
+h1 {
+  font-style: bold;
+  color: #4E1825;
+}
+
+p{
+  color: #4E1825;
+}
+
+h2 {
+  margin-top: 2em; 
+  color: #AAAF7C;
+  background-color: #FFF1E0;
+}
+
+/* STYLE FLEX CONTAINER */
+.question {
+  display: flex;
+  /* uncomment the next line to center the questions and answers */
+  /* justify-content: center; */
+  flex-direction: row;
+  margin-top: 2em;
+}
+  
+/* STYLE FLEX ITEM */
+.answer-choice {
+  margin: 5px;
+}
+
+/* STYLE IMAGES */
+.answer-choice img {
+  height: 15em;
+}
+
+/* STYLE BUTTON */
+button { 
+  font-family: "Brush Script MT", "Cursive", monospace;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #E1877A;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 4px;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✨</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+button:hover {
+  background-color: #AAAF7C;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✨</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
