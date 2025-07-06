@@ -267,27 +267,49 @@ function updateResult() {
   if (felineScore >= 2) {
     result.innerHTML = "You have a feline familiar! They can be fierce but very fluffy on the inside. From lions to cats, they are a wonderful companion to have!";
     console.log("You have a feline familiar! They can be fierce but very fluffy on the inside. From lions to cats, they are a wonderful companion to have!")
+    
+    document.getElementById("showcat").style.visibility = "visible";
+  
   } else if (canineScore >= 2) {
     result.innerHTML = "You have a canine familiar! From wolves to foxes, they are a wonderful companion to have! Remember to give them lots of pets.";
     console.log("You have a canine familiar! From wolves to foxes, they are a wonderful companion to have! Remember to give them lots of pets.")
+  
+    document.getElementById("showdog").style.visibility = "visible";
+
   } else if (insectScore >= 2) {
     result.innerHTML = "You have an insect familiar! They may be small but don't underestimate them. From butterflies to ladybugs, they are a wonderful companion to have!";
     console.log("You have an insect familiar! They may be small but don't underestimate them. From butterflies to ladybugs, they are a wonderful companion to have!")
+  
+    document.getElementById("showbug").style.visibility = "visible";
+  
   } else if (amphibianScore >= 2) {
     result.innerHTML = "You have an amphibian familiar! These critters can be slimey but don't let that put you off. From frogs to salamanders, they are a wonderful companion to have!";
     console.log("You have an amphibian familiar! These critters can be slimey but don't let that put you off. From frogs to salamanders, they are a wonderful companion to have!")
+  
+    document.getElementById("showfrog").style.visibility = "visible";
+
   } else if (mysticalScore >= 2) {
     result.innerHTML = "You have a mystical familiar! These are rare creatures that wanders the myths. From unicorns to dragons, they are a wonderful companion to have!";
     console.log("You have a mystical familiar! These are rare creatures that wanders the myths. From unicorns to dragons, they are a wonderful companion to have!")
+  
+    document.getElementById("showdragon").style.visibility = "visible";  
   } else if (birdScore >= 2) {
     result.innerHTML = "You have a bird familiar! Listen along to their chirps. From crows to parrots, they are a wonderful companion to have!";
     console.log("You have a bird familiar! Listen along to their chirps. From crows to parrots, they are a wonderful companion to have!")
+ 
+    document.getElementById("showbird").style.visibility = "visible";
+
   } else {
     result.innerHTML = "The summoning didn't work! Better luck next time.";
     console.log("The summoning didn't work! Better luck next time.")
   }
 } 
 
+function hideimg(){
+  document.querySelectorAll('.showimgs img').forEach(img =>{
+    img.style.visibility = "hidden";
+  });
+}
 
 /// Restart Function ///
 function restartQuiz() {
@@ -338,4 +360,6 @@ function restartQuiz() {
   ///
   
   console.log("questionCount = " + questionCount + "felineScore =" + felineScore + questionCount + "canineScore =" + canineScore + questionCount + "insectScore =" + insectScore + questionCount + "amphibianScore =" + amphibianScore + questionCount + "birdScore =" + birdScore + questionCount + "mysticalScore =" + mysticalScore);
+  hideimg();
 }
+

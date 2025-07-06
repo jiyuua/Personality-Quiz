@@ -27,53 +27,66 @@ p{
 h1{
   font-size: 35px;
 }
-#show{
-  max-width: 15%;
-  max-height: 15%;
-  visibility: visible;
+.showimgs{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
-#showcat{
-  max-width: 15%;
-  max-height: 15%;
+.showimgs img{
   visibility: hidden;
   position: absolute;
+  max-width: 100%;
+  max-height: 120%;
 }
+
+/* #showcat{
+  max-width: 75%;
+  max-height: 75%;
+  visibility: hidden;
+  position: relative;
+
+}
+
 #showdog{
-  max-width: 15%;
-  max-height: 15%;
+  max-width: 75%;
+  max-height: 75%;
   visibility: hidden;
-  position: absolute;
-}
-#showbird{
-  max-width: 15%;
-  max-height: 15%;
-  visibility: hidden;
-  position: absolute;
-}
-#showdragon{
-  max-width: 15%;
-  max-height: 15%;
-  visibility: hidden;
-  position: absolute;
-}
-#showbug{
-  max-width: 15%;
-  max-height: 15%;
-  visibility: hidden;
-  position: absolute;
-}
-#showfrog{
-  max-width: 15%;
-  max-height: 15%;
-  visibility: hidden;
-  position: absolute;
+  position: relative;
+
 }
 
-/* .showcatt{
-  visibility: visible;
-  align: center;
+#showbird{
+  max-width: 75%;
+  max-height: 75%;
+  visibility: hidden;
+  position: relative;
+}
+
+#showdragon{
+  max-width: 75%;
+  max-height: 75%;
+  visibility: hidden;
+  position: relative;
+}
+
+#showbug{
+  max-width: 75%;
+  max-height: 75%;
+  visibility: hidden;
+  position: relative;
+}
+
+#showfrog{
+  max-width: 75%;
+  max-height: 75%;
+  visibility: hidden;
+  position: relative;
 } */
+
 
 /* STYLE TEXT */
 h1 {
